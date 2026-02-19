@@ -31,7 +31,7 @@ export default function Header() {
             href="https://github.com/gt-examples/ecommerce-storefront"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-400 hover:text-neutral-200 transition-colors"
+            className="ml-2 text-neutral-400 hover:text-neutral-200 transition-colors"
             aria-label="View on GitHub"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

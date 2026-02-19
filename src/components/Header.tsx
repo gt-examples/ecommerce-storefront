@@ -20,10 +20,10 @@ export default function Header() {
             <T>Storefront</T>
           </Link>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           <Link
             href="/cart"
-            className="text-sm text-neutral-400 hover:text-neutral-200 transition-colors"
+            className="text-sm font-semibold text-neutral-100 hover:text-white transition-colors"
           >
             <T>Cart</T>
           </Link>

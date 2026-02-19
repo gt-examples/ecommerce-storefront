@@ -1,4 +1,5 @@
 import { T, Currency, Num, Plural } from "gt-next";
+import { tx } from "gt-next/server";
 import { products } from "@/lib/products";
 import Link from "next/link";
 
@@ -9,11 +10,17 @@ const demoCart = [
   { productId: "6", quantity: 3 },
 ];
 
-export default function CartPage() {
+export default async function CartPage() {
   const cartItems = demoCart.map((item) => ({
     ...item,
     product: products.find((p) => p.id === item.productId)!,
   }));
+
+  // Pre-translate product names
+  const translatedNames: Record<string, string> = {};
+  for (const item of cartItems) {
+    translatedNames[item.productId] = await tx(item.product.name);
+  }
 
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cartItems.reduce(
@@ -44,7 +51,7 @@ export default function CartPage() {
               <div className="w-12 h-12 rounded-full bg-neutral-900 border border-neutral-800 flex-shrink-0" />
               <div>
                 <h3 className="text-sm font-semibold text-neutral-100">
-                  {item.product.name}
+                  {translatedNames[item.productId]}
                 </h3>
                 <p className="text-sm text-neutral-500">
                   <T>

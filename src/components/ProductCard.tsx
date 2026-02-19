@@ -1,9 +1,13 @@
 import { T, Currency } from "gt-next";
+import { tx } from "gt-next/server";
 import Link from "next/link";
 import type { Product } from "@/lib/products";
 import StockStatus from "./StockStatus";
 
-export default function ProductCard({ product }: { product: Product }) {
+export default async function ProductCard({ product }: { product: Product }) {
+  const translatedName = await tx(product.name);
+  const translatedCategory = await tx(product.category);
+
   return (
     <Link
       href={`/product/${product.id}`}
@@ -14,10 +18,10 @@ export default function ProductCard({ product }: { product: Product }) {
       </div>
       <div className="space-y-2">
         <p className="text-xs font-medium text-neutral-500 uppercase tracking-wider">
-          {product.category}
+          {translatedCategory}
         </p>
         <h3 className="text-base font-semibold text-neutral-100 group-hover:text-white transition-colors">
-          {product.name}
+          {translatedName}
         </h3>
         <p className="text-lg font-medium text-neutral-200">
           <Currency currency={product.currency}>{product.price}</Currency>

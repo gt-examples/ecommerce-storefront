@@ -20,7 +20,7 @@ export default function Header() {
             <T>Storefront</T>
           </Link>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <Link
             href="/cart"
             className="text-sm text-neutral-400 hover:text-neutral-200 transition-colors"

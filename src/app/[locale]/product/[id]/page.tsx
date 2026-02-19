@@ -19,7 +19,9 @@ export default async function ProductPage({
   const product = getProduct(id);
   if (!product) notFound();
 
+  const translatedName = await tx(product.name);
   const translatedDescription = await tx(product.description);
+  const translatedCategory = await tx(product.category);
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
@@ -36,10 +38,10 @@ export default async function ProductPage({
         </div>
 
         <p className="text-xs font-medium text-neutral-500 uppercase tracking-wider mb-2">
-          {product.category}
+          {translatedCategory}
         </p>
         <h1 className="text-2xl font-semibold text-neutral-100 mb-4">
-          {product.name}
+          {translatedName}
         </h1>
         <p className="text-neutral-400 leading-relaxed mb-6">
           {translatedDescription}

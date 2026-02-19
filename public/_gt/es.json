@@ -10,6 +10,7 @@
     },
     " restante"
   ],
+  "17a04d4b86da2b8c": "Explora nuestra colección curada de objetos cotidianos cuidadosamente diseñados.",
   "25679ea46e8dc0c6": "Ciudad",
   "298ff7a5cf4e2568": "No disponible",
   "2a7c3d2360c8f61d": "Realizar pedido",
@@ -34,7 +35,7 @@
         "k": "_gt_n_2",
         "v": "n"
       },
-      " elementos disponibles"
+      " artículos disponibles"
     ],
     "d": {
       "b": {
@@ -44,7 +45,7 @@
             "k": "_gt_n_2",
             "v": "n"
           },
-          " de elementos disponibles"
+          " elementos disponibles"
         ],
         "other": [
           {

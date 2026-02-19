@@ -1,13 +1,8 @@
 import { T, Num } from "gt-next";
-import { tx } from "gt-next/server";
 import { products } from "@/lib/products";
 import ProductCard from "@/components/ProductCard";
 
 export default async function Home() {
-  const heroSubtitle = await tx(
-    "Browse our curated collection of thoughtfully designed everyday objects."
-  );
-
   return (
     <main className="max-w-5xl mx-auto px-6 py-12">
       <div className="mb-12">
@@ -17,7 +12,7 @@ export default async function Home() {
           </T>
         </h2>
         <p className="text-base text-neutral-400 max-w-xl leading-relaxed">
-          {heroSubtitle}
+          <T>Browse our curated collection of thoughtfully designed everyday objects.</T>
         </p>
       </div>
 

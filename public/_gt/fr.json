@@ -1,5 +1,6 @@
 {
   "03ea2fc12482c254": "Résumé de commande",
+  "0c730b7f189776b6": "Voir sur GitHub",
   "1214807f94962c7a": "Prénom",
   "1591ca34938cddce": [
     "Plus que ",
@@ -10,12 +11,21 @@
     },
     " restant"
   ],
-  "17a04d4b86da2b8c": "Parcourez notre collection sélectionnée d'objets du quotidien soigneusement conçus.",
+  "17a04d4b86da2b8c": "Parcourez notre collection soigneusement sélectionnée d'objets du quotidien.",
   "25679ea46e8dc0c6": "Ville",
   "298ff7a5cf4e2568": "Indisponible",
   "2a7c3d2360c8f61d": "Passer la commande",
   "3318987ced27b5a4": "Gratuit",
   "36bb4df54b878787": "Expédition",
+  "370fd3a60c554780": [
+    "Cette application de démonstration est construite avec ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    " pour présenter des fonctionnalités e-commerce multilingues. Il ne s'agit pas d'une vraie boutique."
+  ],
   "3dab5f0716eaac98": [
     "Tous les produits (",
     {
@@ -62,7 +72,7 @@
               "k": "_gt_n_3",
               "v": "n"
             },
-            " article disponible"
+            " élément disponible"
           ],
           "i": 2,
           "t": "C2"

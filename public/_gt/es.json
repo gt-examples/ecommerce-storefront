@@ -1,5 +1,6 @@
 {
   "03ea2fc12482c254": "Resumen del pedido",
+  "0c730b7f189776b6": "Ver en GitHub",
   "1214807f94962c7a": "Nombre",
   "1591ca34938cddce": [
     "Solo ",
@@ -16,6 +17,15 @@
   "2a7c3d2360c8f61d": "Realizar pedido",
   "3318987ced27b5a4": "Gratis",
   "36bb4df54b878787": "Envío",
+  "370fd3a60c554780": [
+    "Esta es una aplicación de demostración creada con ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    " para mostrar funciones de comercio electrónico multilingüe. No es una tienda real."
+  ],
   "3dab5f0716eaac98": [
     "Todos los productos (",
     {
@@ -35,7 +45,7 @@
         "k": "_gt_n_2",
         "v": "n"
       },
-      " artículos disponibles"
+      " elementos disponibles"
     ],
     "d": {
       "b": {
